@@ -185,9 +185,13 @@ u8 sp02_sample_temp(void);
 
 u32 average(u32 * );
 
+////**** ADC ****
 
+float lm35_read(void);
 
+unsigned int adc_read(int );
 
+void adc_init(void);
 
 // lcd & delay
 
@@ -264,6 +268,9 @@ void uart1_hex(u8 );
 void EXT_init(void);
 
 //void EXT_isr(void);
+// Internal ADC 
+u32 adc(u8 );
+void adc_init(void);
 
 void ultrasonic_init(void);
 unsigned int distance(void);
